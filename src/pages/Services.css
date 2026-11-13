@@ -1,0 +1,131 @@
+
+.services {
+  padding: 70px 40px;
+  background-color: #f8f7f4;
+}
+
+/* Heading */
+
+.services-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-heading > p {
+  color: #b18b45;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.services-heading h1 {
+  font-size: 38px;
+  color: #222;
+  margin: 15px 0;
+}
+
+.services-heading span {
+  color: #777;
+  font-size: 17px;
+}
+
+/* Cards Grid */
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Individual Card */
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+
+.service-image {
+  height: 240px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.08);
+}
+
+/* Content */
+
+.service-content {
+  padding: 25px;
+}
+
+.service-content h2 {
+  font-size: 21px;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.service-content p {
+  color: #777;
+  line-height: 1.7;
+  min-height: 55px;
+}
+
+/* Enquiry Button */
+
+.service-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 11px 20px;
+  background-color: #c9a45c;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.service-btn:hover {
+  background-color: #222;
+  color: white;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services {
+    padding: 45px 20px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .services-heading h1 {
+    font-size: 29px;
+  }
+}
