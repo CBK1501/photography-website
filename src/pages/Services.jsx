@@ -2,36 +2,41 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Services.css";
-
+import weddingcover from "../images/weddingcover.jpg"
+import PrewedCover from "../images/pre-wedCover.jpg"
+import RecepCover from "../images/Recep-Cover.jpg"
+import candidCover from "../images/candid-cover.jpg"
+import photoframes from "../images/photoframes.jpg"
+import weddingAlbum from "../images/weddingAlbum.jpg"
 const services = [
   {
     title: "Wedding Photography",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=700",
+    image: weddingcover,
     description: "Beautifully capture every special moment of your wedding day."
   },
   {
     title: "Reception Photography",
-    image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=700",
+    image: RecepCover,
     description: "Preserve your reception celebrations and unforgettable memories."
   },
   {
     title: "Pre-Wedding Shoot",
-    image: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=700",
+    image: PrewedCover,
     description: "Create romantic memories with creative pre-wedding photoshoots."
   },
   {
     title: "Candid Photography",
-    image: "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=700",
+    image: candidCover,
     description: "Capture natural emotions and beautiful moments without posing."
   },
   {
     title: "Wedding Albums",
-    image: "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?w=700",
+    image: weddingAlbum,
     description: "Turn your favourite wedding photographs into premium albums."
   },
   {
     title: "Photo Frames",
-    image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700",
+    image: photoframes,
     description: "Display your favourite memories with beautiful photo frames."
   }
 ];

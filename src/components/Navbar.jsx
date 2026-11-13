@@ -16,8 +16,8 @@ function Navbar() {
 
       {/* Logo */}
       <Link to="/" className="navbar-logo" onClick={closeMenu}>
-        <span className="logo-icon">📸</span>
-        <span>Moments Studio</span>
+        {/* <span className="logo-icon">📸</span> */}
+        <span>GOAT Photography</span>
       </Link>
 
       {/* Navigation Links */}

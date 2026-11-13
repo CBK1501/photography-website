@@ -5,7 +5,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer>
-      <h3>Photography Studio</h3>
+      <h3>Goat Photography Studio</h3>
       <p>Capturing your beautiful moments forever.</p>
       <p>© 2026 Photography Studio. All Rights Reserved.</p>
     </footer>

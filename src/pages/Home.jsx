@@ -1,11 +1,20 @@
 
 import './Home.css';
 import { Link } from "react-router-dom";
+import Homecover1 from "../images/Homecover1.jpg"
 
 function Home(){
 
     return(
-      <div className="home-hero">
+      <div
+      className="home-hero"
+      style={{
+        backgroundImage: `
+          linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+          url(${Homecover1})
+        `
+      }}
+    >
 
       <div className="hero-content">
 

@@ -1,82 +1,174 @@
 
 import React, { useState } from "react";
 import "./Gallery.css";
+import wedding1 from "../images/wedding1.jpeg"
+import wedding2 from "../images/wedding2.jpeg"
+import wedding3 from "../images/wedding3.jpg"
+import wedding4 from "../images/wedding4.jpg"
+import wedding5 from "../images/wedding5.jpg"
+import wedding6 from "../images/wedding6.jpg"
+import weddingcover from "../images/weddingcover.jpg"
+import PrewedCover from "../images/pre-wedCover.jpg"
+import prewed1 from "../images/pre-wed1.jpg"
+import prewed2 from "../images/pre-wed2.jpg"
+import prewed3 from "../images/pre-wed3.jpg"
+import prewed4 from "../images/pre-wed4.jpg"
+import prewed5 from "../images/pre-wed5.jpg"
+import prewed6 from "../images/pre-wed6.jpg"
+import RecepCover from "../images/Recep-Cover.jpg"
+import Recep1 from "../images/Recep1.jpg"
+import Recep2 from "../images/Recep2.jpg"
+import Recep3 from "../images/Recep3.avif"
+import Recep4 from "../images/Recep4.jpg"
+import Recep5 from "../images/Recep5.jpg"
+import Recep6 from "../images/Recep6.jpg"
+import candidCover from "../images/candid-cover.jpg"
+import candid1 from "../images/candid1.jpg"
+import candid2 from "../images/candid2.jpg"
+import candid3 from "../images/candid3.jpg"
+import candid4 from "../images/candid4.jpg"
+import candid5 from "../images/candid5.jpg"
+import candid6 from "../images/candid6.jpg"
+import candid7 from "../images/candid7.jpg"
+import candid8 from "../images/candid8.jpg"
 
 const categories = [
   {
     name: "Wedding",
-    cover: "https://images.unsplash.com/photo-1519741497674-611481863552?w=700"
+    // cover: "https://images.unsplash.com/photo-1519741497674-611481863552?w=700"
+    cover: weddingcover
   },
   {
     name: "Reception",
-    cover: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=700"
+    cover: RecepCover
   },
   {
     name: "Pre-Wedding",
-    cover: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=700"
+    cover: PrewedCover
   },
   {
     name: "Candid",
-    cover: "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=700"
+    cover: candidCover
   }
 ];
 
 const photos = [
   // Wedding Photos
   {
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=900",
+    // image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=900",
+    image: wedding1,
     category: "Wedding"
   },
   {
-    image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=900",
+    image: wedding2,
     category: "Wedding"
   },
   {
-    image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=900",
+    image: wedding3,
     category: "Wedding"
   },
   {
-    image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=900",
+    image: wedding4,
     category: "Wedding"
   },
   {
-    image: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=900",
+    image: wedding5,
+    category: "Wedding"
+  },
+   {
+    image: wedding6,
     category: "Wedding"
   },
 
   // Reception Photos
   {
-    image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=900",
+    image: Recep1,
     category: "Reception"
   },
   {
-    image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=900",
+    image: Recep2,
     category: "Reception"
   },
   {
-    image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=900",
+    image: Recep3,
+    category: "Reception"
+  },
+  {
+    image: Recep4,
+    category: "Reception"
+  },
+  {
+    image: Recep5,
+    category: "Reception"
+  },
+  {
+    image: Recep6,
     category: "Reception"
   },
 
   // Pre-Wedding Photos
   {
-    image: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=900",
+    image: prewed1,
     category: "Pre-Wedding"
   },
   {
-    image: "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=900",
+    image: prewed2,
+    category: "Pre-Wedding"
+  },
+  {
+    image: prewed3,
+    category: "Pre-Wedding"
+  },
+  {
+    image: prewed4,
+    category: "Pre-Wedding"
+  },
+  {
+    image: prewed5,
+    category: "Pre-Wedding"
+  },
+  {
+    image: prewed6,
     category: "Pre-Wedding"
   },
 
   // Candid Photos
   {
-    image: "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=900",
+    image: candid1,
     category: "Candid"
   },
   {
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=900",
+    image: candid2,
     category: "Candid"
-  }
+  },
+  {
+    image: candid3,
+    category: "Candid"
+  },
+  {
+    image: candid4,
+    category: "Candid"
+  },
+  {
+    image: candid5,
+    category: "Candid"
+  },
+  
+  {
+    image: candid6,
+    category: "Candid"
+  },
+
+  
+  {
+    image: candid7,
+    category: "Candid"
+  },
+  
+  {
+    image: candid8,
+    category: "Candid"
+  },
 ];
 
 function Gallery() {

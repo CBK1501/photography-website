@@ -29,7 +29,7 @@ function Contact() {
     e.preventDefault();
 
     const message = `
-Hello Moments Studio!
+Hello Goat Photography!
 
 New Customer Enquiry
 

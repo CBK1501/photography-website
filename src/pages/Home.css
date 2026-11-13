@@ -1,41 +1,60 @@
-.home-hero {
-  min-height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 50px 20px;
 
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1600")
-    center/cover no-repeat;
+/* HOME HERO SECTION */
+
+.home-hero {
+  min-height: 100vh;
+  width: 100%;
+
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   color: white;
+  text-align: center;
+  padding: 40px 20px;
 }
+
+/* HERO CONTENT */
 
 .hero-content {
-  max-width: 800px;
+  max-width: 900px;
+  padding: 20px;
 }
+
+/* SUBTITLE */
 
 .hero-subtitle {
-  color: #e5c07b;
-  letter-spacing: 4px;
   font-size: 14px;
-  font-weight: bold;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: #d4af37;
+  margin-bottom: 25px;
 }
 
+/* MAIN HEADING */
+
 .hero-content h1 {
-  font-size: 55px;
+  font-size: 60px;
   line-height: 1.2;
-  margin: 25px 0;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
+
+/* DESCRIPTION */
 
 .hero-description {
   font-size: 18px;
   line-height: 1.7;
-  margin-bottom: 35px;
+  max-width: 650px;
+  margin: 0 auto 35px;
+  color: #f1f1f1;
 }
+
+/* BUTTON CONTAINER */
 
 .hero-buttons {
   display: flex;
@@ -44,39 +63,76 @@
   flex-wrap: wrap;
 }
 
+/* COMMON BUTTON STYLE */
+
 .hero-btn {
-  padding: 14px 28px;
+  display: inline-block;
+  padding: 15px 32px;
   text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
   border-radius: 4px;
-  font-weight: bold;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
+/* PRIMARY BUTTON */
+
 .primary-btn {
-  background-color: #c9a45c;
-  color: black;
+  background-color: #d4af37;
+  color: #111;
+  border: 2px solid #d4af37;
 }
 
 .primary-btn:hover {
-  background-color: white;
+  background-color: #b8962e;
+  border-color: #b8962e;
 }
 
+/* SECONDARY BUTTON */
+
 .secondary-btn {
-  border: 2px solid white;
+  background-color: transparent;
   color: white;
+  border: 2px solid white;
 }
 
 .secondary-btn:hover {
   background-color: white;
-  color: black;
+  color: #111;
 }
 
-@media (max-width: 600px) {
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+  .home-hero {
+    min-height: 85vh;
+  }
+
   .hero-content h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
 
   .hero-description {
-    font-size: 16px;
+    font-size: 15px;
+  }
+
+  .hero-subtitle {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .hero-btn {
+    padding: 12px 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
   }
 }

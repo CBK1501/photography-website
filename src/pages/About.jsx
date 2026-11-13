@@ -36,7 +36,7 @@ function About() {
           <h2>We Turn Your Special Moments Into Timeless Memories</h2>
 
           <p>
-            Welcome to Moments Studio! We are passionate about
+            Welcome to Goat photography! We are passionate about
             photography and love capturing the beautiful moments
             of your life.
           </p>
