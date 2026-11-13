@@ -67,9 +67,9 @@ function Services() {
 
               <p>{service.description}</p>
 
-              <Link to="/contact" className="service-btn">
+              {/* <Link to="/contact" className="service-btn">
                 Enquire Now →
-              </Link>
+              </Link> */}
             </div>
 
           </div>
