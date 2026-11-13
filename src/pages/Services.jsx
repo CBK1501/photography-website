@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Services.css";
 import weddingcover from "../images/weddingcover.jpg"
 import PrewedCover from "../images/pre-wedCover.jpg"
-import RecepCover from "../images/Recep-Cover.jpg"
+import RecepCover from "../images/Recep-cover.jpg"
 import candidCover from "../images/candid-cover.jpg"
 import photoframes from "../images/photoframes.jpg"
 import weddingAlbum from "../images/weddingAlbum.jpg"
